@@ -1,0 +1,14 @@
+# Core dependencies
+requests
+beautifulsoup4
+lxml
+
+# Data processing
+pandas
+numpy
+
+# Visualization
+matplotlib
+
+# Date/time handling
+python-dateutil
