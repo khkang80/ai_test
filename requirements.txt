@@ -9,6 +9,7 @@ numpy
 
 # Visualization
 matplotlib
+streamlit
 
 # Date/time handling
 python-dateutil
