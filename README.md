@@ -16,6 +16,8 @@
 - 📈 **시계열 분석** - 시간에 따른 트렌드 변화 추적
 - 🌐 **웹 대시보드** - Streamlit 기반 인터랙티브 대시보드
 - 📜 **히스토리 추적** - 과거 데이터 저장 및 트렌드 비교
+- 📊 **기술적 분석** - RSI, MACD, 이동평균 등 기술적 지표 계산
+- 🎯 **매수/매도 의견** - 알고리즘 기반 투자 신호 생성
 
 ## 🚀 시작하기
 
@@ -37,12 +39,17 @@ python3 demo.py
 python3 demo_enhanced.py
 ```
 
-#### 3. 웹 대시보드
+#### 3. 완전판 데모 (기술적 분석 + 매매 의견 포함) ⭐ 추천!
+```bash
+python3 demo_complete.py
+```
+
+#### 4. 웹 대시보드
 ```bash
 streamlit run dashboard.py
 ```
 
-#### 4. 실제 뉴스 수집
+#### 5. 실제 뉴스 수집
 ```bash
 python3 main.py
 ```
@@ -51,6 +58,7 @@ python3 main.py
 
 - `data/trending_companies.json` - 기본 트렌딩 회사 데이터
 - `data/trending_companies_enhanced.json` - 주가 + 감성 분석 데이터
+- `data/trending_companies_complete.json` - 기술적 분석 + 매매 의견 포함
 - `data/history.json` - 시계열 히스토리 데이터
 - `data/history.csv` - CSV 형식 히스토리
 - `reports/trending_companies.png` - 시각화 차트
@@ -68,6 +76,8 @@ python3 main.py
 - 자연어 처리 기반 회사명 추출
 - 키워드 기반 감성 분석
 - 시계열 데이터 분석
+- 기술적 분석 (RSI, MACD, 볼린저 밴드, 이동평균)
+- 매수/매도 신호 생성 알고리즘
 
 ### 시각화
 - Matplotlib (차트 생성)
@@ -87,11 +97,13 @@ ai_test/
 ├── company_analyzer.py    # 회사명 분석 모듈
 ├── sentiment_analyzer.py  # 감성 분석 모듈
 ├── stock_data.py         # 주가 데이터 수집 모듈
+├── technical_analysis.py  # 기술적 분석 모듈 (NEW!)
 ├── history_tracker.py    # 히스토리 추적 모듈
 ├── visualizer.py         # 시각화 모듈
 ├── main.py               # 메인 실행 파일
 ├── demo.py               # 기본 데모
 ├── demo_enhanced.py      # 향상된 데모
+├── demo_complete.py      # 완전판 데모 (매매 의견 포함)
 ├── dashboard.py          # 웹 대시보드
 ├── requirements.txt      # 의존성 패키지
 └── README.md            # 문서
@@ -104,6 +116,8 @@ ai_test/
 3. **감성 분석** - 특정 회사에 대한 뉴스 감성 파악
 4. **주가 상관관계** - 뉴스 언급과 주가 변동의 관계 분석
 5. **경쟁사 분석** - 산업별 회사들의 미디어 노출도 비교
+6. **기술적 매매 신호** - RSI, MACD 등을 활용한 매수/매도 타이밍 포착
+7. **종합 투자 판단** - 뉴스 감성 + 기술적 분석을 결합한 투자 의견
 
 ## 🔧 향후 개발 계획
 
